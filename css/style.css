@@ -147,7 +147,6 @@ section.container-foto {
 .imag {
     display: flex;
     padding-top: 60px;
-    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -229,9 +228,10 @@ section.cont-valores {
     background-color: red;
     padding: 5px 0px 100px 0px;
     border-radius: 8px;
+    box-shadow: 0px 0px 8px black;
 }
 .semanal {
-    margin-top: 40px;
+    margin-top: 50px;
     padding: 5px 0px 100px 0px;
     border-radius: 8px;
 }
@@ -278,4 +278,100 @@ section.cont-valores {
     cursor: pointer;
     transition: .2s;
 }
-/*começo planos*/
+/*fim planos*/
+/*começo alunos*/
+section.alunos {
+    background-color: rgb(26, 25, 25);
+}
+
+.txt-alunos {
+    padding: 40px 150px;
+}
+.txt-alunos h1 {
+    text-align: center;
+    font-size: 50px;
+    color: white;   
+}
+
+.img-alunos {
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-around;
+
+}
+.img1 {
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px 5px 10px 5px;
+}
+
+.img1 h3 {
+    text-align: center;
+}
+.img1 p {
+    width: 300px;
+    text-align: justify;
+}
+
+.img1 img {
+    width: 300px;    
+}
+/*fim alunos*/
+/*formulario*/
+section.formulario {
+    display: flex;
+    padding: 80px 22%;
+
+}
+.geral h2 {
+    font-size: 40px;
+    text-align: center;
+}
+.interface1 {
+    display: flex;
+    background-color: #8d9096;
+}
+
+form { 
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 40px 10px 0 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: #3f4552;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: black;
+    font-size: 18px;
+   
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+.mapa {
+    margin: 20px;
+}
