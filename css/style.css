@@ -281,40 +281,118 @@ section.cont-valores {
 /*fim planos*/
 /*começo alunos*/
 section.alunos {
-    background-color: rgb(26, 25, 25);
-}
-
-.txt-alunos {
-    padding: 40px 150px;
-}
-.txt-alunos h1 {
     text-align: center;
+    color: white;
+    background-color: #343336;
     font-size: 50px;
-    color: white;   
+}
+.slider {
+    background-color: #343336;
+    height: 660px;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 590px 70px;
+    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+    justify-items: center;
 }
 
-.img-alunos {
-    display: flex;
-    padding-top: 40px;
-    justify-content: space-around;
-
-}
-.img1 {
-    background-color: white;
+.item img {
+    width: 220px;
+    height: 320px;
     border-radius: 8px;
-    padding: 5px 5px 10px 5px;
+    margin-top: 15px;
+}
+.nome {
+    margin-bottom: 2px;
+    color: red;
+}
+.ocupacao {
+    font-style: italic;
+    margin-top: 2px;
 }
 
-.img1 h3 {
+#alunos {
+    grid-row: 1 / 2;
+    grid-column: 1 / 8;
+    width: 99vw;
+    height: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    --items: 5;
+    --middle: 3;
+    --position: 1;
+    pointer-events: none;
+}
+div.item {
     text-align: center;
-}
-.img1 p {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #fff;
+    position: absolute;
     width: 300px;
-    text-align: justify;
+    height: 550px;
+    background-color: white;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-10deg * var(--r)))
+    translateX(calc(-300px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
 }
-
-.img1 img {
-    width: 300px;    
+div.item:nth-of-type(1) {
+    --offset:1;
+}
+div.item:nth-of-type(2) {
+    --offset:2;
+}
+div.item:nth-of-type(3) {
+    --offset:3;
+}
+div.item:nth-of-type(4) {
+    --offset:4;
+}
+div.item:nth-of-type(5) {
+    --offset:5;
+}
+input:nth-of-type(1) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+input:nth-of-type(1):checked ~ #alunos{
+    --position:1;
+}
+input:nth-of-type(2) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+input:nth-of-type(2):checked ~ #alunos{
+    --position:2;
+}
+input:nth-of-type(3) {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+input:nth-of-type(3):checked ~ #alunos{
+    --position:3;
+}
+input:nth-of-type(4) {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+}
+input:nth-of-type(4):checked ~ #alunos{
+    --position:4;
+}
+input:nth-of-type(5) {
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+}
+input:nth-of-type(5):checked ~ #alunos{
+    --position:5;
 }
 /*fim alunos*/
 /*formulario*/
@@ -323,8 +401,11 @@ section.formulario {
     padding: 80px 22%;
 
 }
+.geral {
+    text-align: center;
+}
 .geral h2 {
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
 }
 .interface1 {
@@ -334,11 +415,12 @@ section.formulario {
 
 form { 
     max-width: 500px;
+    width: 440;
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    margin: 40px 10px 0 20px;
+    margin: 0px 0px 0px 30px;
 }
 
 form input, form textarea {
