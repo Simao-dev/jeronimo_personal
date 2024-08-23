@@ -49,15 +49,16 @@ header nav ul {
 }
 
 header nav.menu-desktop ul li {
-    font-size: 25px;
+    font-size: 20px;
     display: inline-block;
     padding: 0 40px;
 }
 
 .btn-contato button {
-    padding: 10px 40px;
-    font-size: 25px;
+    padding: 10px 30px;
+    font-size: 20px;
     font-weight: 600;
+    color: white;
     background-color: red;
     border: 0;
     border-radius: 30px;
