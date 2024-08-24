@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeronimo Personal</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="js/slider.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </head>
@@ -41,7 +42,7 @@
                 <div class="img-top-site">
                     <img src="imagens/jeronimo2.jpg" alt="Jeronimo">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, tempora modi fugiat commodi, corrupti corporis optio  earum recusandae nobis.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
                         </p>
                     </div>
                     <div class="txt-topo-site">
@@ -56,9 +57,8 @@
                 </div>
         </section>
 
-        <section class="container-foto">
-            <div class="ajudar">
-                <h1>COMO EU VOU TE AJUDAR</h1>
+        <section class="slider">
+            <h1>COMO EU VOU TE AJUDAR</h1>
                 <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Cupiditate beatae quas quo voluptatum doloribus pariatur
                     natus molestiae veniam saepe earum eligendi culpa, delectus
@@ -68,51 +68,74 @@
                     natus molestiae veniam saepe earum eligendi culpa, delectus
                     ipsam minus magni officiis quibusdam deleniti architecto?
                 </P>
-                <div class="imag">
-                    <div class="emagre">
-                        <img src="imagens/emagrecimentore.jpg" alt="emagrecimento">
+            <div class="slider-content">
+                
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+    
+                <div class="slider-box primeiro">
+                    <img class="img-desktop" src="imagens/definição_muscular_pc.jpg" alt="">
+                    <img class="img-mobile" src="imagens/definição_muscular_cel.jpg" alt="">
+                    <div class="legenda">
+                        <h3>Definição muscular</h3>
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis accusantium ipsa natus aliquam amet labore praesentium vero aut, reprehenderit sed magnam odit repellendus, commodi quae a perspiciatis laborum? Temporibus, hic.
+                        </p>
+                    </div>
+                </div>
+                <div class="slider-box"> 
+                    <img class="img-desktop" src="imagens/emagrecimento_pc.jpg" alt="">
+                    <img class="img-mobile" src="imagens/emagrecimento_cel.jpg" alt="">
+                    <div class="legenda">
                         <h3>Emagrecimento</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis accusantium ipsa natus aliquam amet labore praesentium vero aut, reprehenderit sed magnam odit repellendus, commodi quae a perspiciatis laborum? Temporibus, hic.
-                        </p>
-                    </div>
-                    <div class="hiper">
-                        <img src="imagens/hipertrofiare.jpg" alt="hipertrofia">
-                        <h3>hipertrofia</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sit obcaecati nulla, quisquam fugiat iste amet nemo nobis suscipit? Exercitationem, nesciunt repellat! Molestias in dolor perferendis quisquam fuga odit debitis!
-                        </p>
-                    </div>
-                    <div class="define">
-                        <img src="imagens/definição_muscularre.jpg" alt="definição muscular">
-                        <h3>Definição</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nesciunt alias possimus? Ut nobis libero id hic. Fugit natus, eveniet dolores corrupti officiis dolorum ab veniam maxime corporis, praesentium placeat?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis accusantium ipsa natus aliquam amet labore praesentium vero aut, reprehenderit sed magnam odit repellendus, commodi quae a perspiciatis laborum? Temporibus, hic.
                         </p>
                     </div>
                 </div>
+                <div class="slider-box">
+                    <img class="img-desktop" src="imagens/hipertrofia_pc.jpg" alt="">
+                    <img class="img-mobile" src="imagens/hipertrofia_cel.jpg" alt="">
+                    <div class="legenda">
+                        <h3>Hipertrofia</h3>
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis accusantium ipsa natus aliquam amet labore praesentium vero aut, reprehenderit sed magnam odit repellendus, commodi quae a perspiciatis laborum? Temporibus, hic.
+                        </p>
+                    </div>
+                </div>
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
             </div>
-    </section>
+        </section>
 
-    <section class="cont-valores">
-        <h1>PLANOS</h1>
-        <div class="valores">
-            <div class="diario">
-                <h2>Diária <br>R$20</h2>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <div class="btn-contato-preto">
-                    <a href="#"><button>Saiba mais</button></a>
+        <section class="cont-valores">
+            <h1>PLANOS</h1>
+            <div class="valores">
+                <div class="diario">
+                    <h2>Diária <br>R$20</h2>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <div class="btn-contato-preto">
+                        <a href="#"><button>Saiba mais</button></a>
+                    </div>
                 </div>
-            </div>
-            <div class="mensal">
-            <h2>Mensal <br>R$500</h2>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <div class="mensal">
+                <h2>Mensal <br>R$500</h2>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
                 <div class="btn-contato-preto">
                     <a href="#"><button>Saiba mais</button></a>
                 </div>
@@ -132,7 +155,7 @@
     <section class="alunos">
         <h1>ALUNOS</h1>
     </section>
-    <section class="slider">
+    <section class="slider2">
         <input type="radio" name="position"/>
         <input type="radio" name="position"/>
         <input type="radio" name="position" checked/>
@@ -217,11 +240,9 @@
     </section>
     <footer class="rodape">
         <div class="informacoes">
-            <h1>Sobre mim</h1>
+            <h1>Sobre</h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium 
-                sint earum maxime architecto, tempore, dicta vero expedita vel tempora cum ,
-                nam, amet dolorem blanditiis provident commodi animi eum possimus. Laboriosam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium.
             </p>
         </div>
         <div class="redes">

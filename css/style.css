@@ -40,7 +40,7 @@ header a {
     transition: .2s;
 }
 header nav.menu-desktop a:hover {
-    color: red;
+    color: #780116;
     transform: scale(1.05);
 }
 
@@ -59,7 +59,7 @@ header nav.menu-desktop ul li {
     font-size: 20px;
     font-weight: 600;
     color: white;
-    background-color: red;
+    background-color: #780116;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -70,10 +70,6 @@ button:hover, form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px black;
     transform: scale(1.05);
 }
-
-/*como vou te ajudar*/
-    
-
 .container-text {
     padding: 200px 0 0 130px;
 }
@@ -87,7 +83,9 @@ button:hover, form .btn-enviar input:hover {
     margin-top: 10px;
     font-size: 20px;
 }
+/*sobre mim*/
 section.topo-do-site {
+    background-color: #fbfefb;
     padding: 40px 4%;
     margin-top: 700px;
 }
@@ -101,6 +99,9 @@ section.topo-do-site .flex {
     width: 400px;
     height: 400px;
     box-shadow: 0px 0px 8px black;
+    border-radius: 8px;
+    
+    
 }
 .topo-do-site h1 {
     text-align: center;
@@ -116,13 +117,13 @@ section.topo-do-site .flex {
 }
 .topo-do-site a {
     cursor: pointer;
-    color: red;
+    color: #780116;
     margin-left: 20px;
     font-size: 40px;
     transition: .2s;
 }
 section a:hover {
-    color: rgb(131, 6, 6);
+    color: #780116;
 }
 
 section.container-foto {
@@ -144,16 +145,114 @@ section.container-foto {
 .ajudar > h1 {
     font-size: 40px;
 }
+/*como vou te ajudar*/
+section.slider{
+    background-image: linear-gradient(to right, #343336, #141414);
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+.slider h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
 
+}
+.slider p {
+    color: white;
+    text-align: center;
+    padding: 10px 150px;
+}
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+.slider-content input, .img-mobile{
+    display: none;
+}
+.slider-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+.legenda{
+    background-color: rgba(0, 0, 0, 0.534);
+    color: white;
+    position: absolute;
+    bottom: 7px;;
+}
+.legenda p {
+    padding: 10px 150px;
+    text-align: center;
+
+}
+.legenda h3 {
+    font-size: 40px;
+    font-weight: 800;
+}
+.slider-box img{
+    width: 100%;
+}
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+}
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+.nav-manual .manual-btn:hover{
+    background-color: #780116;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3 {
+    background-color: #780116;
+}
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+@media screen and (max-width: 900px) {
+    .img-desktop{
+        display: none;
+    }
+
+    .img-mobile{
+        display: block;
+    }
+    .nav-auto, .nav-manual{
+        margin-top: 60%;
+    }
+}
+/*como vou te ajudar*/
+    
 .imag {
     display: flex;
     padding-top: 60px;
     justify-content: space-around;
 }
 
-img{
-    border-radius: 8px;
-}
 
 .imag .emagre {
     color: black;
@@ -189,7 +288,6 @@ img{
 }
 .define > p {
     width: 290px;
-    text-align: justify;
     font-size: 15px;
 }
 
@@ -206,8 +304,13 @@ section.cont-valores {
 }
 
 .cont-valores > h1 {
+    background-color: #fbfefb;
+    margin-top: 60px;
     font-size: 40px;
     text-align: center;
+}
+.cont-valores {
+    background-color:#fbfefb ;
 }
 .valores {
     display: flex;
@@ -221,8 +324,8 @@ section.cont-valores {
 .diario {
     width: 350px;
     height: 500px;
-    color: black;
     margin-top: 40px;
+    border: 1px solid black;
     border-radius: 8px;
     transition: 1s;
 }
@@ -232,7 +335,7 @@ section.cont-valores {
     transform: scale(1.05);
 }
 .mensal {
-    background-color: red;
+    background-color: #780116;
     width: 350px;
     height: 550px;
     border-radius: 8px;
@@ -247,7 +350,8 @@ section.cont-valores {
 .semanal {
     width: 350px;
     height: 500px;
-    margin-top: 50px;
+    margin-top: 40px;
+    border: 1px solid black;
     border-radius: 8px;
     transition: 1s;
 }
@@ -258,10 +362,11 @@ section.cont-valores {
 }
 
 .diario li {
-    padding: 11px 10px 45px 10px;
+    padding: 5px 10px 45px 10px;
 }
 
 .mensal li {
+    color: #fbfefb;
     padding: 5px 10px 15px 10px;
 }
 
@@ -271,7 +376,7 @@ section.cont-valores {
 }
 .valores .mensal > h2 {
     text-align: center;
-    color: white;
+    color: #fbfefb;
     font-size: 40px;
 }
 
@@ -305,7 +410,7 @@ section.alunos h1 {
     background-color: #343336;
     font-size: 40px;
 }
-.slider {
+.slider2 {
     background-color: #343336;
     height: 660px;
     margin: 0;
@@ -323,7 +428,7 @@ section.alunos h1 {
 }
 .nome {
     margin-bottom: 2px;
-    color: red;
+    color: #780116;
 }
 .ocupacao {
     font-style: italic;
@@ -416,6 +521,7 @@ input:nth-of-type(5):checked ~ #alunos{
 /*fim alunos*/
 /*formulario*/
 section.formulario {
+    background-color: #fbfefb;
     display: flex;
     padding: 80px 22%;
 
@@ -430,6 +536,7 @@ section.formulario {
 .interface1 {
     display: flex;
     background-color: #8d9096;
+    border-radius: 8px;
 }
 
 form { 
@@ -467,7 +574,7 @@ form .btn-enviar {
 
 form .btn-enviar input {
     width: 120px;
-    background-color: red;
+    background-color: #780116;
     color: white;
     font-weight: 700;
     cursor: pointer;
@@ -501,12 +608,12 @@ footer.rodape {
 
 .redes a {
     cursor: pointer;
-    color: red;
-    margin-left: 20px;
-    font-size: 40px;
+    color: #780116;
+    margin-left: 40px;
+    font-size: 30px;
     transition: .2s;
 }
 
 .redes a:hover {
-    color: rgb(131, 6, 6);
+    color: #780116;
 }
