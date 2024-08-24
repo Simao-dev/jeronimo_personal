@@ -219,9 +219,10 @@ section.cont-valores {
 }
 
 .diario {
+    width: 350px;
+    height: 500px;
     color: black;
     margin-top: 40px;
-    padding: 5px 0px 100px 0px;
     border-radius: 8px;
     transition: 1s;
 }
@@ -232,7 +233,8 @@ section.cont-valores {
 }
 .mensal {
     background-color: red;
-    padding: 5px 0px 100px 0px;
+    width: 350px;
+    height: 550px;
     border-radius: 8px;
     box-shadow: 0px 0px 8px black;
     transition: 1s;
@@ -243,8 +245,9 @@ section.cont-valores {
     transform: scale(1.05);
 }
 .semanal {
+    width: 350px;
+    height: 500px;
     margin-top: 50px;
-    padding: 5px 0px 100px 0px;
     border-radius: 8px;
     transition: 1s;
 }
@@ -254,19 +257,17 @@ section.cont-valores {
     transform: scale(1.05);
 }
 
-.diario p {
-    text-align: justify;
-    padding: 15px 10px 100px 10px;
+.diario li {
+    padding: 11px 10px 45px 10px;
 }
 
-.mensal p {
-    text-align: justify;
-    padding: 15px 10px 100px 10px;
+.mensal li {
+    padding: 5px 10px 15px 10px;
 }
 
-.semanal p {
-    text-align: justify;
-    padding: 15px 10px 100px 10px;
+
+.semanal li {
+    padding: 5px 10px 20px 10px;;
 }
 .valores .mensal > h2 {
     text-align: center;
