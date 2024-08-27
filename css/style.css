@@ -35,7 +35,8 @@ header > .interface {
 header a {
     color: white;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 15px;
     display: inline-block;
     transition: .2s;
 }
@@ -233,18 +234,7 @@ section.slider{
     margin-left: -50%;
 }
 
-@media screen and (max-width: 900px) {
-    .img-desktop{
-        display: none;
-    }
 
-    .img-mobile{
-        display: block;
-    }
-    .nav-auto, .nav-manual{
-        margin-top: 60%;
-    }
-}
 /*como vou te ajudar*/
     
 .imag {
@@ -323,8 +313,8 @@ section.cont-valores {
 
 .diario {
     width: 350px;
-    height: 500px;
-    margin-top: 40px;
+    min-height: 565px;
+    margin-top: 63px;
     border: 1px solid black;
     border-radius: 8px;
     transition: 1s;
@@ -337,7 +327,7 @@ section.cont-valores {
 .mensal {
     background-color: #780116;
     width: 350px;
-    height: 550px;
+    min-height: 565px;
     border-radius: 8px;
     box-shadow: 0px 0px 8px black;
     transition: 1s;
@@ -349,7 +339,7 @@ section.cont-valores {
 }
 .semanal {
     width: 350px;
-    height: 500px;
+    min-height: 565px;
     margin-top: 40px;
     border: 1px solid black;
     border-radius: 8px;
@@ -616,4 +606,16 @@ footer.rodape {
 
 .redes a:hover {
     color: #780116;
+}
+@media screen and (max-width: 900px) {
+    .img-desktop{
+        display: none;
+    }
+
+    .img-mobile{
+        display: block;
+    }
+    .nav-auto, .nav-manual{
+        margin-top: 60%;
+    }
 }
