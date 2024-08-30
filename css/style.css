@@ -510,104 +510,80 @@ input:nth-of-type(5):checked ~ #alunos{
 }
 /*fim alunos*/
 /*formulario*/
-section.formulario {
-    background-color: #fbfefb;
-    display: flex;
-    padding: 80px 22%;
-
-}
-.geral {
-    text-align: center;
-}
-.geral h1 {
-    font-size: 40px;
-    text-align: center;
-}
-.interface1 {
-    display: flex;
-    background-color: #8d9096;
-    border-radius: 8px;
-}
-
-form { 
-    max-width: 500px;
-    width: 440;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    margin: 0px 0px 0px 30px;
-}
-
-form input, form textarea {
+section.fala-comigo {
     width: 100%;
-    background-color: #3f4552;
-    border: 0;
-    outline: 0;
-    padding: 20px 15px;
-    border-radius: 15px;
-    color: black;
-    font-size: 18px;
-   
-}
-
-form textarea {
-    resize: none;
-    max-height: 200px;
-
-}
-
-form .btn-enviar {
-    margin-top: 20px;
-    text-align: center;
-}
-
-form .btn-enviar input {
-    width: 120px;
-    background-color: #780116;
-    color: white;
-    font-weight: 700;
-    cursor: pointer;
-    transition: .2s;
-}
-.mapa {
-    margin: 20px;
-}
-
-footer.rodape {
-    padding-top: 20px;
+    height: 100vh;
     display: flex;
-    justify-content: space-around;
-    background-color: #343336;
-    color: white;
-    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fbfefb;
+}
+.contact-container {
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    background: #343336;
+    box-shadow: 0px 0px 8px black;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-.informacoes {
-    width: 600px;
+.form-container {
+    padding: 20px;
 }
 
-.informacoes p {
-    text-align: justify;
-    padding: 5px 5px;
+.form-container h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 
-.redes {
-    width: 600px;
+.contact-form {
+    display: flex;
+    row-gap: 1rem;
+    flex-direction: column;
 }
 
-.redes a {
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    padding: 10px;
+    font-size: 0.9rem;
+    border-radius: 0.4rem;
+
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.contact-form .send-button {
+    border: none;
+    outline: none;
+    background: #780116;
+    font-size: 1rem;
+    font-weight: 500;
     cursor: pointer;
-    color: #780116;
-    margin-left: 40px;
-    font-size: 30px;
     transition: .2s;
 }
-
-.redes a:hover {
-    color: #780116;
+.contact-form .send-button:hover {
+    box-shadow: 0px 0px 8px black;
+    transform: scale(1.05);
 }
-@media screen and (max-width: 900px) {
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 950px) {
     .img-desktop{
         display: none;
     }
@@ -617,5 +593,20 @@ footer.rodape {
     }
     .nav-auto, .nav-manual{
         margin-top: 60%;
+    }
+    .contact-container {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 5rem !important;
+    }
+    .map iframe {
+        height: 400px;
+
     }
 }
