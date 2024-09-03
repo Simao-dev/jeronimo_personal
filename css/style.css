@@ -161,8 +161,8 @@ section.slider{
     padding: 0 !important;
     overflow: hidden;
 }
-.slider h1 {
-    font-size: 40px;
+.slider h2 {
+    font-size: 20px;
     margin-top: 20px;
     color: white;
     text-align: center;
@@ -192,16 +192,16 @@ section.slider{
     background-color: rgba(0, 0, 0, 0.534);
     color: white;
     position: absolute;
-    bottom: 7px;;
+    bottom: 7px;
 }
 .legenda p {
-    padding: 10px 150px;
+    padding: 0 auto;
     text-align: center;
 
 }
 .legenda h3 {
-    font-size: 40px;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: 600;
 }
 .slider-box img{
     width: 100%;
