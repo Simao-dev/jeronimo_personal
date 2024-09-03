@@ -12,7 +12,7 @@
 body {
     background-image: url(../imagens/background.png);
     background-repeat: no-repeat;
-    height: 100vh;
+    width: auto;
 }
 
 header .interface {
@@ -25,7 +25,10 @@ header .interface {
     background-color: rgba(0, 0, 0, 0.534);
     margin: 0;
 }
+.interface .logo > img{
+    width: 200px;
 
+}
 header > .interface {
     display: flex;
     align-items: center;
@@ -73,6 +76,9 @@ button:hover, form .btn-enviar input:hover {
 }
 .container-text {
     padding: 200px 0 0 130px;
+}
+.text {
+    width: 700px;
 }
 
 .text h1 {
@@ -584,8 +590,42 @@ section.fala-comigo {
     height: 100%;
 }
 @media screen and (max-width: 950px) {
+    .menu-desktop{
+        display: none;
+    }
+    .interface .logo > img{
+        width: 130px;
+    
+    }
+    .btn-contato button {
+        padding: 5px 20px;
+        
+    }
     .img-desktop{
         display: none;
+    }
+    .container-text {
+        padding: 200px 0 0 20px;
+    }
+
+    .text {
+        width: auto;
+        height: auto;
+    }
+
+    section.topo-do-site {
+        padding: 10px;
+        margin-top: 520px;
+    }
+
+    section.topo-do-site .flex {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    .img-top-site > img {
+        width: 370px;
+        height: 380px;
     }
 
     .img-mobile{
