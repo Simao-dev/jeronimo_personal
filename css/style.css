@@ -12,7 +12,7 @@
 body {
     background-image: url(../imagens/background.png);
     background-repeat: no-repeat;
-    width: auto;
+    background-size: 2000px;
 }
 
 header .interface {
@@ -79,6 +79,7 @@ button:hover, form .btn-enviar input:hover {
 }
 .text {
     width: 700px;
+    margin-bottom: 50px;
 }
 
 .text h1 {
@@ -94,7 +95,6 @@ button:hover, form .btn-enviar input:hover {
 section.topo-do-site {
     background-color: #fbfefb;
     padding: 40px 4%;
-    margin-top: 700px;
 }
 section.topo-do-site .flex {
     display: flex;
@@ -102,6 +102,7 @@ section.topo-do-site .flex {
     gap: 150px;
 
 }
+
 .img-top-site img {
     width: 400px;
     height: 400px;
@@ -130,7 +131,7 @@ section.topo-do-site .flex {
     transition: .2s;
 }
 section a:hover {
-    color: #780116;
+    color: #ff062f;
 }
 
 section.container-foto {
@@ -155,7 +156,7 @@ section.container-foto {
 /*como vou te ajudar*/
 section.slider{
     background-image: linear-gradient(to right, #343336, #141414);
-    margin: 0 auto;
+    margin: -6px auto;
     width: 100%;
     height: auto;
     padding: 0 !important;
@@ -195,7 +196,7 @@ section.slider{
     bottom: 7px;
 }
 .legenda p {
-    padding: 0 auto;
+    padding: 5px 10px;
     text-align: center;
 
 }
@@ -302,7 +303,8 @@ section.cont-valores {
 .cont-valores > h1 {
     background-color: #fbfefb;
     margin-top: 60px;
-    font-size: 40px;
+    font-weight: 800;
+    font-size: 30px;
     text-align: center;
 }
 .cont-valores {
@@ -310,7 +312,7 @@ section.cont-valores {
 }
 .valores {
     display: flex;
-    padding: 40px 150px;
+    padding: 40px 3%;
     padding-top: 60px;
     flex-direction: row;
     justify-content: space-around;
@@ -373,23 +375,23 @@ section.cont-valores {
 .valores .mensal > h2 {
     text-align: center;
     color: #fbfefb;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .valores .diario > h2 {
     text-align: center;
     color: rgb(0, 0, 0);
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .valores .semanal > h2 {
     text-align: center;
     color: rgb(0, 0, 0);
-    font-size: 40px;
+    font-size: 30px;
 }
 .btn-contato-preto button {
     color: white;
-    padding: 10px 40px;
+    padding: 5% 10%;
     font-size: 25px;
     font-weight: 600;
     background-color: rgb(0, 0, 0);
@@ -523,6 +525,7 @@ section.fala-comigo {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
     background: #fbfefb;
 }
 .contact-container {
@@ -588,8 +591,32 @@ section.fala-comigo {
 .map iframe {
     width: 100%;
     height: 100%;
+
 }
-@media screen and (max-width: 950px) {
+
+.rodape {
+    background-color: #343336;
+    display: flex;
+}
+.informacoes {
+    padding: 7px;
+    color: white;
+}
+.redes {
+    padding: 7px;
+    color: white;
+}
+.redes a {
+    cursor: pointer;
+    color: #780116;
+    font-size: 30px;
+    transition: .2s;
+}
+
+.redes a:hover {
+    color: #ff062f;
+}
+@media screen and (max-width: 960px) {
     .menu-desktop{
         display: none;
     }
@@ -615,7 +642,6 @@ section.fala-comigo {
 
     section.topo-do-site {
         padding: 10px;
-        margin-top: 520px;
     }
 
     section.topo-do-site .flex {
@@ -623,10 +649,33 @@ section.fala-comigo {
         width: auto;
         height: auto;
     }
+    
     .img-top-site > img {
         width: 370px;
         height: 380px;
     }
+
+   .legenda {
+        bottom: 0px;
+   }
+
+   .valores {
+        display: block;
+        padding: 4%;
+        margin: auto;
+   }
+
+   .diario {
+        margin: 15px 0 20px 0;
+   }
+
+   .mensal {
+        margin: 15px 0 20px 0;
+   }
+
+   .semanal {
+    margin: 15px 0 20px 0;
+   }
 
     .img-mobile{
         display: block;
