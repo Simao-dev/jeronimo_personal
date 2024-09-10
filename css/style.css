@@ -10,10 +10,12 @@
 }
 /*menu desktop*/
 body {
+
     background-image: url(../imagens/background.png);
     background-repeat: no-repeat;
     background-size: 2000px;
 }
+
 
 header .interface {
     display: flex;
@@ -57,7 +59,14 @@ header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 40px;
 }
+.interface2 {
+    
+}
 
+header .background {
+    position: relative;
+
+}
 .btn-contato button {
     padding: 10px 30px;
     font-size: 20px;
@@ -649,10 +658,15 @@ section.fala-comigo {
         width: auto;
         height: auto;
     }
-    
+    .img-top-site {
+        display: flex;
+        flex-direction: column;
+     
+    }
     .img-top-site > img {
-        width: 370px;
-        height: 380px;
+        margin: 0 10%;
+        width: auto;
+        height: auto;
     }
 
    .legenda {
